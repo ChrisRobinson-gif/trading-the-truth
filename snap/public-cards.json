@@ -1,0 +1,972 @@
+[
+  {
+    "id": "SNAP-0001",
+    "q": "What exchange is NQ on?",
+    "a": "NQ is the E-mini Nasdaq-100 futures contract. It trades electronically on CME Globex under CME Group. Not a stock. Not Nasdaq cash. A CME-listed equity-index future.",
+    "category": "Exchanges & contracts",
+    "tags": [
+      "nq",
+      "cme",
+      "globex",
+      "exchanges",
+      "contracts",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0002",
+    "q": "What exchange is ES on?",
+    "a": "ES is the E-mini S&P 500 futures contract. It also trades on CME Globex (CME Group). Same venue family as NQ. Different underlying index.",
+    "category": "Exchanges & contracts",
+    "tags": [
+      "es",
+      "cme",
+      "globex",
+      "exchanges",
+      "contracts",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0004",
+    "q": "What does /ES or /NQ mean?",
+    "a": "Slash notation is the continuous futures symbol used by many platforms and brokers. It points at the front-month (or roll-adjusted) series so you do not type a specific month every day. The actual tradable is still a dated contract (e.g. ESU6).",
+    "category": "Exchanges & contracts",
+    "tags": [
+      "es",
+      "nq",
+      "contracts",
+      "front-month",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0005",
+    "q": "What are futures contract months (H M U Z)?",
+    "a": "Equity-index E-minis use quarterly months: H March, M June, U September, Z December. Front month is the nearest liquid quarter until the roll. Always know which month your DOM and order ticket are on.",
+    "category": "Exchanges & contracts",
+    "tags": [
+      "contract-months",
+      "roll",
+      "contracts",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0006",
+    "q": "What is a tick and a point on ES / NQ?",
+    "a": "On ES and NQ the minimum tick is 0.25 index points. One point = 4 ticks. ES: $12.50 per tick ($50 per point). NQ: $5 per tick ($20 per point). Micro contracts (/MES /MNQ) are one-tenth of those values.",
+    "category": "Exchanges & contracts",
+    "tags": [
+      "tick",
+      "point",
+      "es",
+      "nq",
+      "sizing",
+      "contracts",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0007",
+    "q": "What is CME Globex?",
+    "a": "Globex is CME Group's electronic trading platform. Nearly all modern ES/NQ/CL retail and prop volume prints there. Pit lore is history. Your feed is Globex electronic matching.",
+    "category": "Exchanges & contracts",
+    "tags": [
+      "globex",
+      "cme",
+      "exchanges",
+      "electronic",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0008",
+    "q": "What is the difference between the cash index and the futures?",
+    "a": "The Nasdaq-100 or S&P 500 cash index is a calculated number from stocks. NQ/ES are tradable futures that price expectations of that index plus cost-of-carry and overnight inventory. Gaps and overnight moves live in futures first.",
+    "category": "Exchanges & contracts",
+    "tags": [
+      "cash-index",
+      "futures",
+      "nq",
+      "es",
+      "contracts",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0009",
+    "q": "What is a micro futures contract?",
+    "a": "MES and MNQ are micro E-minis — roughly 1/10 the notional and tick dollar value of ES/NQ. Same Globex venue and auction. Smaller risk unit for learning and sized practice. Not a different market law.",
+    "category": "Exchanges & contracts",
+    "tags": [
+      "micro",
+      "mes",
+      "mnq",
+      "sizing",
+      "contracts",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0011",
+    "q": "What is ETH / electronic trading hours?",
+    "a": "ETH means Electronic Trading Hours — the Globex overnight / extended session outside the primary cash open block. For equity index futures that is most of the 23-hour Globex day outside RTH. Liquidity is thinner; inventory and news still move price.",
+    "category": "Sessions & hours",
+    "tags": [
+      "eth",
+      "sessions",
+      "globex",
+      "hours",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0012",
+    "q": "What is RTH / regular trading hours?",
+    "a": "RTH for US equity-index futures is the primary daytime cash session window — commonly about 09:30–16:00 Eastern for ES/NQ cash-aligned activity (desk labels vary slightly; lock yours). Most retail volume and many play criteria reference RTH.",
+    "category": "Sessions & hours",
+    "tags": [
+      "rth",
+      "sessions",
+      "hours",
+      "es",
+      "nq",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0013",
+    "q": "When does Globex trade ES / NQ?",
+    "a": "Nearly around the clock Sunday evening through Friday, with a short daily maintenance break (commonly around 16:00–17:00 Eastern — confirm current CME schedule). Weekend closed. Hours change; verify CME before you assume.",
+    "category": "Sessions & hours",
+    "tags": [
+      "globex",
+      "hours",
+      "sessions",
+      "cme",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0015",
+    "q": "What is overnight inventory?",
+    "a": "Positions and price path built during ETH relative to the prior RTH close. The RTH open often reacts to where overnight left the auction — not to a magic gap-fill script. Inventory informs context; it is not a signal.",
+    "category": "Sessions & hours",
+    "tags": [
+      "overnight",
+      "inventory",
+      "eth",
+      "sessions",
+      "gaps",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0020",
+    "q": "What does session mean in this course?",
+    "a": "A locked time window you journal against — usually RTH for Track A plays, with ETH as context. Do not change the definition mid-week to excuse a trade. Consistency beats clever labels.",
+    "category": "Sessions & hours",
+    "tags": [
+      "sessions",
+      "journal",
+      "process",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0021",
+    "q": "What is a market order?",
+    "a": "A market order says: take liquidity now at whatever price is offered or bid. You pay the spread and any slip. You do not pick a price — the book picks you. Useful when you must be in; expensive when you are lazy.",
+    "category": "Orders & execution",
+    "tags": [
+      "market-order",
+      "orders",
+      "execution",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0022",
+    "q": "What is a limit order?",
+    "a": "A limit order rests at your price (or better). It may not fill. You control worst price; you do not control fill certainty. At the open across a gap, resting limits behave by exchange matching rules — they do not magically become the gap print.",
+    "category": "Orders & execution",
+    "tags": [
+      "limit-order",
+      "orders",
+      "execution",
+      "gaps",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0023",
+    "q": "How do you see market orders executing?",
+    "a": "On ATAS: Smart Tape / Time & Sales shows prints; Clusters (Bid×Ask) show aggression at price; DOM shows depth changing as marketable orders lift offers or hit bids. Market orders consume resting liquidity. That consumption is what you read as aggression.",
+    "category": "Orders & execution",
+    "tags": [
+      "market-order",
+      "tape",
+      "dom",
+      "clusters",
+      "atas",
+      "execution",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0028",
+    "q": "What does lifting the offer / hitting the bid mean?",
+    "a": "Lifting the offer = buy marketable (take ask). Hitting the bid = sell marketable (take bid). That is aggression. Passive size rests. Footprint Bid×Ask language is built on this.",
+    "category": "Orders & execution",
+    "tags": [
+      "aggression",
+      "bid-ask",
+      "orders",
+      "order-flow",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0031",
+    "q": "What are opening gaps?",
+    "a": "An opening gap is when RTH opens away from the prior RTH close (or your locked reference print), leaving a price void on the RTH chart. Futures often already traded that path overnight on Globex — the gap is relative to the session you chart.",
+    "category": "Opening gaps & auction theory",
+    "tags": [
+      "gaps",
+      "opening",
+      "auction",
+      "sessions",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0032",
+    "q": "What caused a gap up or gap down?",
+    "a": "Usually overnight inventory plus news, macro prints, earnings clusters, geopolitical headlines, or simply aggressive repositioning while cash was closed. The cause is information and orders — not a pattern name. Name the driver when you can; admit when you cannot.",
+    "category": "Opening gaps & auction theory",
+    "tags": [
+      "gaps",
+      "overnight",
+      "news",
+      "auction",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0033",
+    "q": "How is the gap price made?",
+    "a": "The open print is the first matched trades of the RTH session (or your defined open) after overnight Globex continuous trading. Indicative opens and call auctions on some products differ; for CME equity-index futures the overnight book already priced discovery. The gap on your RTH chart is arithmetic between prior close and that open — not mystical ink from nowhere.",
+    "category": "Opening gaps & auction theory",
+    "tags": [
+      "gaps",
+      "open",
+      "auction",
+      "globex",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0034",
+    "q": "What is auction theory in plain words?",
+    "a": "Markets discover price by buyers and sellers showing size and aggression. Balance = accepted value. Imbalance = price seeks new value. Profiles and footprints are maps of that auction — not crystal balls.",
+    "category": "Opening gaps & auction theory",
+    "tags": [
+      "auction",
+      "profile",
+      "order-flow",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0035",
+    "q": "Do limit orders miss or get filled at open price across a gap?",
+    "a": "It depends on order type, side, and matching. A buy limit below a gap-up open typically does not fill at the open — price is already above your limit. A sell limit above a gap-down open often misses the open print the same way. Stop-markets can fill worse through the void. Limits do not catch the gap price just because you wanted them to. Read your broker's open/gap handling; do not assume YouTube rules.",
+    "category": "Opening gaps & auction theory",
+    "tags": [
+      "limit-order",
+      "gaps",
+      "orders",
+      "open",
+      "execution",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0037",
+    "q": "What is the market must fill the gap theory — and why we do not treat it as law?",
+    "a": "Retail folklore says price must return to fill every gap. Sometimes price revisits; sometimes it never does for a long time; sometimes it fills much later with no edge for you today. Gaps are session artefacts and overnight auctions — not IOUs from the market. We note unfilled gaps as context. We do not treat gap-fill as a mandatory trade or a law of nature.",
+    "category": "Opening gaps & auction theory",
+    "tags": [
+      "gap-fill",
+      "myths",
+      "gaps",
+      "anti-folklore",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0041",
+    "q": "What are HFT firms?",
+    "a": "High-frequency trading firms use co-located servers, fast market data, and automated strategies to trade large volumes of small edges — market making, arb, short-horizon speculation. They are participants in the book. They are not a cartoon villain under your bed. You will not beat their ping from a home Wi-Fi hero story.",
+    "category": "HFT, latency, participants",
+    "tags": [
+      "hft",
+      "participants",
+      "latency",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0042",
+    "q": "What is low latency?",
+    "a": "Low latency means short delay between event, decision, and order reach to the matching engine. Measured in microseconds to milliseconds for pros. Your edge as a discretionary student is criteria and risk — not racing HFT. Clean feed and stable connection still matter so your screen is not a lie.",
+    "category": "HFT, latency, participants",
+    "tags": [
+      "latency",
+      "hft",
+      "data-feed",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0049",
+    "q": "What is M1 and M2 money supply?",
+    "a": "M1 and M2 are Federal Reserve monetary aggregates. M1 is the narrow stack — currency and checkable/near-checkable deposits (definitions revised over time; use current Fed tables). M2 is broader — M1 plus savings-like deposits and retail money-market funds (again: check current Fed composition). They measure money-like balances in the banking system. They are not a secret switch for next week's NQ print.",
+    "category": "Money / macro",
+    "tags": [
+      "m1",
+      "m2",
+      "macro",
+      "money-supply",
+      "fed",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0056",
+    "q": "What is the platform stack in this course?",
+    "a": "ATAS is the classroom: Clusters Bid×Ask, Delta/CVD, Volume Profile, Smart Tape/DOM, Market Replay. CQG Integrated Client is what Chris uses personally to execute — you do not need it to learn. TradingView is context only — not tick footprint truth.",
+    "category": "Order flow / ATAS",
+    "tags": [
+      "atas",
+      "platforms",
+      "cqg",
+      "tradingview",
+      "stage-1",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0058",
+    "q": "What is a footprint / cluster chart in ATAS?",
+    "a": "Volume traded at each price inside a bar, usually Bid×Ask or delta per price. Shows imbalance, unfinished auctions, and absorption detail candles hide. In ATAS this is Clusters — Bid×Ask primary for this curriculum.",
+    "category": "Order flow / ATAS",
+    "tags": [
+      "footprint",
+      "clusters",
+      "bid-ask",
+      "atas",
+      "order-flow",
+      "stage-1",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0059",
+    "q": "What is Bid×Ask on the cluster?",
+    "a": "At each price, volume traded on the bid vs the ask. Ask-side volume approximates buy aggression (lifted offers). Bid-side volume approximates sell aggression (hit bids). Know your ATAS colour/layout. This is the alphabet — not a buy arrow.",
+    "category": "Order flow / ATAS",
+    "tags": [
+      "bid-ask",
+      "clusters",
+      "atas",
+      "aggression",
+      "order-flow",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0064",
+    "q": "What is CVD?",
+    "a": "Cumulative Volume Delta — running sum of buying vs selling aggression (delta) over the session or chosen period. Sustained CVD and divergences are evidence layers — not magic arrows. ATAS carries delta/CVD as a question engine.",
+    "category": "Order flow / ATAS",
+    "tags": [
+      "cvd",
+      "delta",
+      "order-flow",
+      "play-32",
+      "atas",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0066",
+    "q": "What is a volume profile?",
+    "a": "Volume at price for a session (or range). Shows where the auction did business. Nodes (HVN/LVN) and value area (VAH/VAL/POC) are location tools for criteria — not crystal balls. ATAS: Fixed and Developing profiles.",
+    "category": "Order flow / ATAS",
+    "tags": [
+      "profile",
+      "poc",
+      "vah-val",
+      "hvn-lvn",
+      "order-flow",
+      "atas",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0076",
+    "q": "What size bands does Stage 3 use?",
+    "a": "Clean plays (1–2): about 0.25–0.75% capital risk. Event plays (3): 0.10–0.50%. Marginal criteria means cut size or stand aside. Stop distance drives contract count.",
+    "category": "Risk & sizing",
+    "tags": [
+      "sizing",
+      "risk",
+      "stage-3",
+      "play-31",
+      "play-32",
+      "play-33",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0077",
+    "q": "How do I turn risk percent into contracts on /ES?",
+    "a": "Risk dollars = account times risk percent. Tick value times stop ticks = dollar risk per contract. Contracts = floor(risk dollars / dollars per contract). Never round up to feed ego. Same math on NQ with NQ tick value.",
+    "category": "Risk & sizing",
+    "tags": [
+      "sizing",
+      "risk",
+      "stop-distance",
+      "es",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0083",
+    "q": "What is R-multiple?",
+    "a": "R is your planned risk on the trade (entry to invalidation in dollars). +2R means you made twice planned risk. Journal in R so ego dollars do not rewrite the story.",
+    "category": "Risk & sizing",
+    "tags": [
+      "r-multiple",
+      "risk",
+      "journal",
+      "sizing",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0085",
+    "q": "What is max daily loss for?",
+    "a": "A hard stop on the day so one spiral does not erase a month. Hit it — flat — journal. Not a suggestion. Lifestyle OS and Stage 0 treat this as standard, not soft advice.",
+    "category": "Risk & sizing",
+    "tags": [
+      "risk",
+      "daily-loss",
+      "lifestyle",
+      "stage-0",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0086",
+    "q": "Is stand aside really an edge?",
+    "a": "Yes. Flat is a position. Most missed winners were correctly avoided losers in disguise. Process score rewards correct flats.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "stand-aside",
+      "process-score",
+      "mindset",
+      "stage-3",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0087",
+    "q": "What is Stage 0 and do I need it before footprint?",
+    "a": "Stage 0 is Non-Retail Starter — standards, risk basics, Lifestyle OS, Constitution, gate. Yes. No footprint / CVD / profile stack until the gate clears. Toys after standards.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "stage-0",
+      "gate",
+      "getting-started",
+      "constitution",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0088",
+    "q": "What is the Stage 0 gate checklist?",
+    "a": "Binary: Execute work 0.0–0.6 done; Trading + Life Constitution signed and dated; gate affidavit signed; data is king logged and indicator stack audited. Vibes do not clear the gate.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "stage-0",
+      "gate",
+      "constitution",
+      "getting-started",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0089",
+    "q": "I bought Futures access. Can I skip Starter?",
+    "a": "If Stage 0 was not cleared, you still clear the gate. Paying for Track A does not delete process. Soft care: if you are trying, finish the foundation — we do not lower the bar.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "stage-0",
+      "product",
+      "gate",
+      "getting-started",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0090",
+    "q": "What should I put in the trade journal?",
+    "a": "Play code, ALL criteria score, size, invalidation hit?, stand aside?, body check, one lesson. Replay gate before size-up. Honesty beats pretty screenshots.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "journal",
+      "replay",
+      "process-score",
+      "stage-3",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0091",
+    "q": "Why is there a body check before session?",
+    "a": "Body is part of the risk system. Sleep, food, alcohol rules, gym — Stage 0 Lifestyle OS. Optional 60s pre-session body check in Stages 1–3. Fail the body check means cut size or flat.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "lifestyle",
+      "body-check",
+      "stage-0",
+      "risk",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0092",
+    "q": "Is alcohol really a program rule?",
+    "a": "Yes in-program: no alcohol. Not a vibe suggestion. Consumption mastery is part of the Constitution thread. Health is number one wealth.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "lifestyle",
+      "alcohol",
+      "constitution",
+      "stage-0",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0093",
+    "q": "What is Non-Retail Starter vs Non-Retail Futures?",
+    "a": "Starter (£97) is Stage 0. Non-Retail Futures is the flagship (Track A intraday first; Track B Swing later) including Stages 1+. No signals in either. Starter Snap Cards slice = Stage 0 + basics; full Futures unlocks full bank.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "product",
+      "starter",
+      "futures",
+      "no-signals",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0094",
+    "q": "Will you send trade signals?",
+    "a": "No. Never. Criteria teach. We do not ping entries. If you came for a tip service, wrong room.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "no-signals",
+      "product",
+      "stage-3",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0095",
+    "q": "What is soft care in this course?",
+    "a": "Hard line on truth; soft care for the man who is trying. Pattern line: If you are trying, this is for you. I will not lower the bar — I will help you clear it. Once max per piece.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "mindset",
+      "soft-care",
+      "getting-started",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0109",
+    "q": "Do I have to gym daily?",
+    "a": "Daily gym is a program standard — train the body that sits the risk. Adapt for injury with honesty, not laziness cosplay.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "lifestyle",
+      "gym",
+      "stage-0",
+      "stage-4",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0112",
+    "q": "What does See: mean on a Snap Card?",
+    "a": "Pointer to lesson or play code for deeper work. Snap Cards are truth plus revision — not a replacement for the lesson film or play card.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "product",
+      "snap-cards",
+      "getting-started",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0096",
+    "q": "Is gap must fill a market law?",
+    "a": "No. It is a common belief and a sometimes-useful map note. Price often revisits; often it does not on your timetable. We do not treat gap-fill as mandatory edge. See SNAP-0037.",
+    "category": "Myths & retail traps",
+    "tags": [
+      "gap-fill",
+      "myths",
+      "gaps",
+      "anti-folklore",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0097",
+    "q": "What does data is king mean here?",
+    "a": "Transactions, size at price, aggression vs absorption, session location — not oscillator soup. TA that decorates after the auction decided is retail theatre.",
+    "category": "Myths & retail traps",
+    "tags": [
+      "data-is-king",
+      "anti-ta",
+      "getting-started",
+      "stage-1",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0102",
+    "q": "Is this financial advice?",
+    "a": "No. Education only. Futures trading involves substantial risk of loss. You are responsible for your decisions and compliance with local rules.",
+    "category": "Myths & retail traps",
+    "tags": [
+      "product",
+      "disclaimer",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0103",
+    "q": "What is Process · Knowledge · Execution?",
+    "a": "Program spine. Stage 0 process/standards; Stage 1 knowledge/reading; Stage 2 context; Stage 3 execution. Retail usually dies at execution while collecting vocabulary.",
+    "category": "Myths & retail traps",
+    "tags": [
+      "getting-started",
+      "stage-0",
+      "stage-3",
+      "execution",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0147",
+    "q": "How does Snap Cards separate Zell from fakers?",
+    "a": "Locked answers. No invented signals. Futures-first ATAS classroom. Soft care sparingly. Explicit anti-theatre category. You search a named question and get blunt truth — not a webinar funnel.",
+    "category": "Fakers & retail theatre",
+    "tags": [
+      "fakers",
+      "product",
+      "gospel",
+      "anti-signal",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0178",
+    "q": "What is margin in futures (concept)?",
+    "a": "Performance bond — good-faith deposit, not the full notional. Exchange/broker set initial and maintenance margins. Leverage cuts both ways. Concept literacy; your broker's numbers rule.",
+    "category": "Exchanges & contracts",
+    "tags": [
+      "margin",
+      "leverage",
+      "risk",
+      "contracts",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0180",
+    "q": "What is a micro contract for in practice?",
+    "a": "Smaller tick/notional so risk percent maps to fewer dollars while you build process. Not a toy forever — a sizing tool. Ego that 'only standards count' often skips Stage 0 maths.",
+    "category": "Exchanges & contracts",
+    "tags": [
+      "micros",
+      "sizing",
+      "risk",
+      "contracts",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0191",
+    "q": "Why does RTH still matter if Globex is near 24h?",
+    "a": "RTH concentrates US cash equity related flow, tighter typical liquidity for indices, and the open auction. ETH still matters for inventory. Knowing both beats living in one timezone story.",
+    "category": "Sessions & hours",
+    "tags": [
+      "sessions",
+      "rth",
+      "eth",
+      "globex",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0200",
+    "q": "Multi-timezone life — how do UK traders think about US RTH?",
+    "a": "US RTH is afternoon/evening in UK. Sleep and food matter more than 'grind culture'. If you are wrecked at the open, stand aside. Body is part of the session plan.",
+    "category": "Sessions & hours",
+    "tags": [
+      "sessions",
+      "lifestyle",
+      "sleep",
+      "rth",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0221",
+    "q": "R-multiple — deepen the idea?",
+    "a": "1R = initial risk planned. Outcomes in R let you compare trades across size. +2R on micro and +2R on full size are the same process score, different dollars. Journal in R.",
+    "category": "Risk & sizing",
+    "tags": [
+      "r-multiple",
+      "journal",
+      "expectancy",
+      "risk",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0249",
+    "q": "How does sleep hit trading decisions?",
+    "a": "Sleep debt raises impulsivity and shrinks patience for stand-aside. You will invent criteria. Body check includes sleep. Tired + markets = voluntary tuition.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "sleep",
+      "lifestyle",
+      "body-check",
+      "risk",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0252",
+    "q": "Gym as training metaphor — what does Zell mean?",
+    "a": "Reps under load. Progressive standards. No highlight-reel ego. Missed days compound. Trading process is trained the same way — boring consistency beats inspirational spikes.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "gym",
+      "lifestyle",
+      "discipline",
+      "persona",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0255",
+    "q": "What is the grow-up moment in this program?",
+    "a": "When you stop collecting setups and start keeping standards — body, journal, risk, stand-aside — without an audience. Grow up. All in on process. Not on cosplay.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "grow-up",
+      "stage-0",
+      "process",
+      "persona",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0271",
+    "q": "Myth: the market must fill the gap — kill it again?",
+    "a": "Gaps often fill over some horizon — and often do not on your timetable. Treating fill as law creates forced fades and ignored inventory. See SNAP-0037 / 0096. Belief ≠ edge.",
+    "category": "Myths & retail traps",
+    "tags": [
+      "myths",
+      "gaps",
+      "anti-folklore",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0304",
+    "q": "How should students audit a 'funded success' story?",
+    "a": "Ask: time window, number of attempts/fees, risk rules used, post-pass expectancy, journal standards, losing streaks shown. If answers are vibes, treat as ad.",
+    "category": "Fakers & retail theatre",
+    "tags": [
+      "fakers",
+      "prop-firms",
+      "journal",
+      "process",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0312",
+    "q": "Zell filter: when is a prop/tool worth considering?",
+    "a": "When you can state rules in one paragraph, size without fantasy, journal without screenshots, and accept stand-aside. Tool serves process. If process is missing, the tool is a costume.",
+    "category": "Fakers & retail theatre",
+    "tags": [
+      "fakers",
+      "prop-firms",
+      "process",
+      "anti-signal",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0327",
+    "q": "How do you pre-commit against tilt?",
+    "a": "Written max daily loss, max trades, size ladder, stand-aside triggers (sleep, alcohol, family stress), and a kill switch: platform logout. Pre-commit when calm. Enforce when hot.",
+    "category": "Psychology of execution",
+    "tags": [
+      "tilt",
+      "max-daily-loss",
+      "process",
+      "psychology",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0338",
+    "q": "What should a trading journal actually contain?",
+    "a": "Setup name/criteria score, size/risk R, entry/exit reason, invalidation, session context, emotion/tilt tags, screenshot of the decision board — not just PnL. Stand-asides count as entries.",
+    "category": "Journaling & review",
+    "tags": [
+      "journal",
+      "process",
+      "review",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0351",
+    "q": "What is a pre-session checklist card?",
+    "a": "Sleep, body, calendar, platform health, max loss, plays in play, stand-aside triggers. Tick before size. Red tick → no trade.",
+    "category": "Journaling & review",
+    "tags": [
+      "checklist",
+      "stage-0",
+      "journal",
+      "body-check",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0382",
+    "q": "ATAS advanced — what stays Stage-1 sacred?",
+    "a": "Replay, fail galleries, naming behaviours, linking to plays later. Live size still waits for criteria and Stage gates. Advanced eyes without Stage 0 is expensive cosplay.",
+    "category": "Order flow / ATAS",
+    "tags": [
+      "atas",
+      "stage-1",
+      "replay",
+      "process",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0383",
+    "q": "What is the Initial Balance (IB) in plain language?",
+    "a": "Usually the range established in the first hour of the cash session (definitions vary — know yours). IB is a reference for later expansion or balance — not a crystal ball.",
+    "category": "Sessions & hours",
+    "tags": [
+      "ib",
+      "day-structure",
+      "sessions",
+      "auction",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0399",
+    "q": "How should UK-based traders map US day structure?",
+    "a": "Translate clocks: IB, midday, power hour in London time. Protect sleep. Do not force Asia heroics because you are awake.",
+    "category": "Sessions & hours",
+    "tags": [
+      "uk-traders",
+      "sessions",
+      "day-structure",
+      "lifestyle",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0418",
+    "q": "Sim vs live — what actually changes?",
+    "a": "Psychology, slippage, partial fills, queue priority, hesitation. Sim is for reps and eyes. Live is for criteria under consequence. Treating sim PnL as proof is theatre.",
+    "category": "Orders & execution",
+    "tags": [
+      "sim-vs-live",
+      "slippage",
+      "psychology",
+      "stage-1",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0431",
+    "q": "How do you write a swing thesis (non-signal)?",
+    "a": "One paragraph: directional bias, why (structure/context), invalidation level/condition, time horizon, news risks, size as fraction of day-risk book. No entry spam. Thesis is a contract with yourself.",
+    "category": "Swing / multi-day (Track B)",
+    "tags": [
+      "thesis",
+      "swing",
+      "track-b",
+      "journal",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0450",
+    "q": "What is sleep debt as trading risk?",
+    "a": "Debt compounds: slower processing, emotional reactivity, FOMO susceptibility. You cannot caffeine your way into clean criteria forever. Sleep is risk infrastructure.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "sleep",
+      "lifestyle",
+      "body-check",
+      "risk",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0461",
+    "q": "Why Zell ties health to trading gospel?",
+    "a": "Because decision variance is physiological. Consumption, sleep, training — these are risk tools. Aesthetic wellness is optional. Function is not.",
+    "category": "Process / Stage 0 / Lifestyle",
+    "tags": [
+      "lifestyle",
+      "health",
+      "persona",
+      "body-check",
+      "starter-slice"
+    ]
+  },
+  {
+    "id": "SNAP-0508",
+    "q": "Glossary: What is retail theatre?",
+    "a": "Performance sold as trading education: signals, cropped curves, FOMO funnels, costume dashboards. Snap Cards exist to filter it.",
+    "category": "Glossary",
+    "tags": [
+      "glossary",
+      "retail-theatre",
+      "fakers",
+      "anti-signal",
+      "starter-slice"
+    ]
+  }
+]
