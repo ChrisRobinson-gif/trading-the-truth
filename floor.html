@@ -11,7 +11,12 @@
   <header class="site-header">
     <div class="site-header-inner">
       <a class="brand" href="index.html">Chris Zell <span>Trading</span></a>
-      <nav class="nav" aria-label="Primary">
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
         <a href="academy/index.html">Academy</a>
         <a href="snap/index.html">Snap</a>
         <a href="manifesto.html">Manifesto</a>
@@ -28,9 +33,20 @@
     <p class="hard-line">Truth is free. Training is The Floor. Other sellers sell information. We train.</p>
     <p class="hard-line">You do not become a trader by reading the free academy and clicking live. That is giving a 16-year-old the car keys and saying work the pedals. Knowledge is free. Training is here.</p>
 
+    <div class="plan-grid">
+      <div class="plan-card plan-card-primary">
+        <span class="plan-badge">Most used</span>
+        <p class="plan-label">Monthly</p>
+        <p class="plan-price">£97<span>/mo</span></p>
+        <a class="btn btn-primary btn-block btn-lg" href="https://buy.stripe.com/dRm9AT2ax1kKdTme2pbfO02">Join The Floor — £97/mo</a>
+      </div>
+      <div class="plan-card">
+        <p class="plan-label">Annual</p>
+        <p class="plan-price">£897<span>/yr</span></p>
+        <a class="btn btn-primary btn-block btn-lg" href="https://buy.stripe.com/28E6oHaH3e7w6qU0bzbfO01">£897 / year</a>
+      </div>
+    </div>
     <div class="btn-row">
-      <a class="btn btn-primary" href="https://buy.stripe.com/dRm9AT2ax1kKdTme2pbfO02">Join The Floor — £97/mo</a>
-      <a class="btn btn-primary" href="https://buy.stripe.com/28E6oHaH3e7w6qU0bzbfO01">£897 / year</a>
       <a class="btn btn-ghost" href="academy/index.html">Read the free academy first</a>
     </div>
     <p class="cta-note">Annual ≈ two months free. Education only — no signals.</p>
@@ -71,17 +87,33 @@
 
     <div class="upsell" id="floor">
       <p class="master">Join The Floor. If you need hype, leave.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="https://buy.stripe.com/dRm9AT2ax1kKdTme2pbfO02" id="floor-cta">£97 / month</a>
-        <a class="btn btn-primary" href="https://buy.stripe.com/28E6oHaH3e7w6qU0bzbfO01">£897 / year</a>
+      <div class="plan-grid">
+        <div class="plan-card plan-card-primary">
+          <p class="plan-label">Monthly</p>
+          <p class="plan-price">£97<span>/mo</span></p>
+          <a class="btn btn-primary btn-block btn-lg" href="https://buy.stripe.com/dRm9AT2ax1kKdTme2pbfO02" id="floor-cta">£97 / month</a>
+        </div>
+        <div class="plan-card">
+          <p class="plan-label">Annual</p>
+          <p class="plan-price">£897<span>/yr</span></p>
+          <a class="btn btn-primary btn-block btn-lg" href="https://buy.stripe.com/28E6oHaH3e7w6qU0bzbfO01">£897 / year</a>
+        </div>
       </div>
       <p style="font-size:0.85rem;margin-top:1rem;margin-bottom:0;">Checkout is live. Community room (Skool recommended) ships when you open it — members get email until then.</p>
     </div>
   </main>
 
   <footer class="site-footer">
+    <nav class="footer-links" aria-label="Footer">
+      <a href="academy/index.html">Academy</a>
+      <a href="snap/index.html">Snap</a>
+      <a href="manifesto.html">Manifesto</a>
+      <a href="strategy.html">Strategy</a>
+      <a href="floor.html">The Floor</a>
+    </nav>
     <p class="strip">No signals · No indicator packs · Process over prediction</p>
     <p>Chris Zell Trading · Education only — not financial advice.</p>
   </footer>
+  <script src="nav.js" defer></script>
 </body>
 </html>

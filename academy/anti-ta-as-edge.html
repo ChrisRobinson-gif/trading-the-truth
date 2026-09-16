@@ -10,7 +10,12 @@
   <header class="site-header">
     <div class="site-header-inner">
       <a class="brand" href="../index.html">Chris Zell <span>Trading</span></a>
-      <nav class="nav" aria-label="Primary">
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
         <a href="index.html" aria-current="page">Academy</a>
         <a href="../snap/index.html">Snap</a>
         <a href="../manifesto.html">Manifesto</a>
@@ -92,8 +97,16 @@
   </main>
 
   <footer class="site-footer">
+    <nav class="footer-links" aria-label="Footer">
+      <a href="../academy/index.html">Academy</a>
+      <a href="../snap/index.html">Snap</a>
+      <a href="../manifesto.html">Manifesto</a>
+      <a href="../strategy.html">Strategy</a>
+      <a href="../floor.html">The Floor</a>
+    </nav>
     <p class="strip">No signals · No indicator packs · Process over prediction</p>
     <p>Chris Zell Trading · Education only — not financial advice.</p>
   </footer>
+  <script src="../nav.js" defer></script>
 </body>
 </html>

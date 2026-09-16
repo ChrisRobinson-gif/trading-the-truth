@@ -11,7 +11,12 @@
   <header class="site-header">
     <div class="site-header-inner">
       <a class="brand" href="../index.html">Chris Zell <span>Trading</span></a>
-      <nav class="nav" aria-label="Primary">
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
         <a href="../academy/index.html">Academy</a>
         <a href="index.html" aria-current="page">Snap</a>
         <a href="../manifesto.html">Manifesto</a>
@@ -27,11 +32,13 @@
     <h1>Snap Cards</h1>
     <p class="lead">Starter-slice Q&amp;A. Blunt definitions. Futures-first. Full bank sits behind The Floor.</p>
 
-    <div class="search-bar">
-      <input type="search" id="q" placeholder="Search questions, answers, tags…" aria-label="Search Snap Cards" autocomplete="off">
+    <div class="snap-toolbar">
+      <div class="search-bar">
+        <input type="search" id="q" placeholder="Search questions, answers, tags…" aria-label="Search Snap Cards" autocomplete="off">
+      </div>
+      <div class="category-pills" id="pills" aria-label="Filter by category"></div>
+      <p class="search-meta" id="meta">Loading…</p>
     </div>
-    <div class="category-pills" id="pills" aria-label="Filter by category"></div>
-    <p class="search-meta" id="meta">Loading…</p>
     <div id="results"></div>
 
     <div class="upsell">
@@ -44,6 +51,13 @@
   </main>
 
   <footer class="site-footer">
+    <nav class="footer-links" aria-label="Footer">
+      <a href="../academy/index.html">Academy</a>
+      <a href="../snap/index.html">Snap</a>
+      <a href="../manifesto.html">Manifesto</a>
+      <a href="../strategy.html">Strategy</a>
+      <a href="../floor.html">The Floor</a>
+    </nav>
     <p class="strip">No signals · No indicator packs · Process over prediction</p>
     <p>Chris Zell Trading · Education only — not financial advice.</p>
   </footer>
@@ -142,5 +156,6 @@
   inputEl.addEventListener("input", filter);
 })();
   </script>
+  <script src="../nav.js" defer></script>
 </body>
 </html>
